@@ -1,0 +1,21 @@
+Athermes0101
+link git remote with heroku app 
+heroku git:remote -a <app name here>
+show remote 
+git remote -v
+
+git add file name 	// add file to stage 
+git commit -m "test"   // commit changes
+
+{ id : "1234",
+    username : "Xinchi",
+ 	email : "xinchi_wu@yahoo.com"
+}
+
+mongod --repair
+mongod --dbpath c:\nodejs\nodetest1\data
+mongod --dbpath c:\nodejs\nodetest2\data
+db.userlist.insert({'username' : 'test1','email' : 'test1@test.com','fullname' : 'Bob Smith','age' : 27,'location' : 'San Francisco','gender' : 'Male'})
+
+MONGOLAB_URI: 
+mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750
