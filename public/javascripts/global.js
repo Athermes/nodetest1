@@ -63,6 +63,20 @@ function showUserInfo(event) {
 
 };
 
+ //get ads button click
+    $('#btnGetAds').on('click', getAds);
+    
+    function getAds( event){
+        
+    // jQuery AJAX call for JSON
+    $.getJSON( '/users/location_ads', function( data ) {
+        console.log(data);
+    });
+
+    }
+    
+    //
+
  // Add User button click
     $('#btnAddUser').on('click', addUser);
 	

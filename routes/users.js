@@ -2,18 +2,22 @@ var express = require('express');
 var router = express.Router();
 
 /*
- * GET userlist.
+ * GET ads.
  */
- /*
-router.get('/userlist', function(req, res) {
+
+router.get('/location_ads', function(req, res) {
     var db = req.db;
-	if (db == null) {res.json('empty');}
+	
+	if (db === null) {res.json('empty');}
 	else {
-		db.collection('userlist').find().toArray(function (err, items) {res.json(items);}
-    }
+    db.collection('local_ads').find({"position.lat": "23.0954"}).toArray(function (err, items) {
+        res.json(items);
+    });
+	
+	}
 });
 
-*/
+//
 router.get('/userlist', function(req, res) {
     var db = req.db;
 	

@@ -1,3 +1,11 @@
+//Zhiqiang
+
+
+
+//xinchi/ x
+
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
@@ -9,14 +17,16 @@ var bodyParser = require('body-parser');
 var mongo = require('mongoskin');
 //var db = mongo.db("mongodb://localhost:27017/nodetest2", {native_parser:true});
 // use heroku mongo add-on service 
-//var db = mongo.db("mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750", {native_parser:true});
+var db = mongo.db("mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750", {native_parser:true});
 
-var db = ( mongo.db("mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750", {native_parser:true})
-|| mongo.db("mongodb://localhost:27017/nodetest2", {native_parser:true})) ;				   
+//var db = ( mongo.db("mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750", {native_parser:true})
+//|| mongo.db("mongodb://localhost:27017/nodetest2", {native_parser:true})) ;				   
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+// test test 
+// test second 
+// 3rd
 var app = express();
 
 // view engine setup
