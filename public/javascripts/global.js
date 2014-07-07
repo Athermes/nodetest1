@@ -76,7 +76,36 @@ function showUserInfo(event) {
     }
     
     //
+// 2014 07 07 get ads with POST open 
+    $('#btnGetAds02').on('click', getAds02);
+    
+    function getAds02( event){
+        
+        var payLoad = {
+            "carbID": "1234567890hashed", 
+            "GPS": {
+                "lat": "33.3435345", 
+                "long": "83.4645654", 
+            }, 
+            "timestamp": "20140707000000"
+        }; 
 
+        // Use AJAX to post the object to our adduser service
+        $.ajax({
+            type: 'POST',
+            data: payLoad,
+            url: '/users/location_ads02',
+            dataType: 'JSON'
+        }).done(function( response ) {
+
+                console.log("from Node server" + response)
+                // Update the table
+                //populateTable();
+        });
+        
+    }
+
+// 2014 07 07 clost get add with POST 
  // Add User button click
     $('#btnAddUser').on('click', addUser);
 	
