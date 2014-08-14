@@ -5,6 +5,7 @@ show remote
 git remote -v
 
 git add file name 	// add file to stage 
+git add -A // add all changed files
 git commit -m "test"   // commit changes
 
 { id : "1234",
@@ -19,3 +20,6 @@ db.userlist.insert({'username' : 'test1','email' : 'test1@test.com','fullname' :
 
 MONGOLAB_URI: 
 mongodb://heroku_app25839750:ttqnaprmpbpp0meookfce6s39l@ds033037.mongolab.com:33037/heroku_app25839750
+
+// node-inspetor
+https://nodetest1-c9-xinchi.c9.io/debug?port=5858 

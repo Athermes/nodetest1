@@ -84,8 +84,8 @@ function showUserInfo(event) {
         var payLoad = {
             "carbID": "1234567890hashed", 
             "GPS": {
-                "lat": "33.3435345", 
-                "long": "83.4645654", 
+                "lat": 39.979782, 
+                "long": -75.385119, 
             }, 
             "timestamp": "20140707000000"
         }; 
